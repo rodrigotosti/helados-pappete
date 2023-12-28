@@ -1,4 +1,5 @@
 import Button from "../src/components/Button/Button";
+import FlexContainer from "../src/components/Layout/FlexContainer/FlexContainer";
 
 export default function Home() {
   const test = () => {
@@ -6,8 +7,15 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
-      <Button onClick={test} label="HOLA" modifier="with-background"></Button>
+    <main className="min-h-screen p-24 bg-white">
+      <FlexContainer type="row">
+        <Button onClick={test} modifier="with-background">
+          Hola
+        </Button>
+        <Button onClick={test} modifier="with-background">
+          Chau
+        </Button>
+      </FlexContainer>
     </main>
   );
 }

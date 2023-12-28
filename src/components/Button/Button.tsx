@@ -1,16 +1,16 @@
-import React, { FC, useMemo } from "react";
+import { FC, ReactNode, useMemo } from "react";
 import buttonStyles from "./Button.module.css";
 
 type ButtonProps = {
   onClick: (params: any) => void;
-  label: string;
+  children: ReactNode;
   state?: "disabled" | "loading";
   modifier?: "default" | "with-background" | "footer";
 };
 
 const Button: FC<ButtonProps> = ({
   onClick,
-  label,
+  children,
   state,
   modifier = "default",
 }) => {
@@ -25,7 +25,7 @@ const Button: FC<ButtonProps> = ({
     return modifierString;
   }, [modifier, state]);
 
-  return <button className={styleClasses}>{label}</button>;
+  return <button className={styleClasses}>{children}</button>;
 };
 
 export default Button;
