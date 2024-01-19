@@ -2,8 +2,8 @@ import { FC, ReactNode, useMemo } from "react";
 import buttonStyles from "./Button.module.css";
 
 type ButtonProps = {
-  onClick: (params: any) => void;
   children: ReactNode;
+  onClick?: (params: any) => void;
   state?: "disabled" | "loading";
   modifier?: "default" | "with-background" | "footer";
 };
