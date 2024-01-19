@@ -11,15 +11,15 @@ const Header: FC<HeaderProps> = () => {
 
   return (
     <header className={headerStyles.main}>
-      <FlexContainer>
+      <FlexContainer gap = {10}>
         <Button>Home</Button>
         <Button>Sabores</Button>
       </FlexContainer>
-      <FlexContainer>
+      <FlexContainer gap = {10}>
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </FlexContainer>
-      <FlexContainer>
-        <Button modifier="with-background">Home</Button>
+      <FlexContainer gap =  {10}>
+        <Button modifier="with-background">Pedido Online</Button>
         <Button>Locales</Button>
         <Button>RRHH</Button>
       </FlexContainer>
