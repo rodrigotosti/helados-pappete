@@ -1,6 +1,41 @@
 .main {
-  height: 95px;
-  display: flex;
+  width: 100%;
   background-color: white;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1080px;
+  display: flex;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.mobile {
+  overflow: hidden;
+  position: fixed;
+  top: -85px;
+  width: 100%;
+  transition: top 0.5s ease-out;
+  justify-content: center;
+}
+
+.visible {
+  top: 0px;
+}
+
+.nonVisible {
+  top: -85px;
+}
+
+.remove {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
 }
