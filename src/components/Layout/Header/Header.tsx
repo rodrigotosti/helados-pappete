@@ -9,6 +9,7 @@ type HeaderProps = {};
 
 const Header: FC<HeaderProps> = () => {
   // TODO: Si esta en home marcar como activo
+  // TODO: Custom hooks
 
   const [mobileHeaderIsVisible, setMobileHeaderIsVisible] = useState(false);
   const handleScroll = () => {

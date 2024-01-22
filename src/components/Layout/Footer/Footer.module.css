@@ -1,0 +1,19 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5b5b5b;
+  color: #ffffff80;
+  font-size: 0.9em;
+}
+
+.container {
+  padding: 10px;
+  max-width: 1080px;
+  justify-content: center;
+
+  align-items: center;
+  min-width: 500px;
+  display: flex;
+}
