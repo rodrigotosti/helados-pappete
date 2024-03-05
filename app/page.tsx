@@ -1,37 +1,112 @@
 import Hero from "@/src/components/Hero/Hero";
+import Flavours from "../src/components/Flavours/Flavours";
 import Image from "next/image";
 
 export default function Home() {
-   //TODO: PONER IMAGEN EN EL DIV LINEA 11
-   //TODO: COMPONETIZAR LAS IMAGENES
-
   return (
-    <main className="min-h-screen p-24 bg-white">
+    <main className="min-h-screen bg-white gap-8 flex flex-col">
       <Hero></Hero>
-      <div>QUE COMIENCE LA PAPPETEADA</div>
-      <section>
+      <Flavours></Flavours>
+      <section
+        style={{
+          height: 418,
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 10,
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            gap: 10,
+          }}
+        >
+          <Image src="/logo.png" alt="logo" width={359} height={359} />
+          <div
+            style={{
+              width: "100%",
+              padding: 5,
+              background: "#93805c",
+              textAlign: "center",
+            }}
+          >
+            <h2
+              style={{
+                color: "white",
+                fontFamily: '"Roboto", Sans-serif',
+                fontSize: 28,
+                fontWeight: 600,
+              }}
+            >
+              HELADOS
+            </h2>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            gap: 10,
+          }}
+        >
+          <Image src="/logo.png" alt="logo" width={359} height={359} />
+          <div
+            style={{
+              width: "100%",
+              padding: 5,
+              background: "#93805c",
+              textAlign: "center",
+            }}
+          >
+            <h2
+              style={{
+                color: "white",
+                fontFamily: '"Roboto", Sans-serif',
+                fontSize: 28,
+                fontWeight: 600,
+              }}
+            >
+              PALETAS
+            </h2>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            gap: 10,
+          }}
+        >
+          <Image src="/logo.png" alt="logo" width={359} height={359} />
+          <div
+            style={{
+              width: "100%",
+              padding: 5,
+              background: "#93805c",
+              textAlign: "center",
+            }}
+          >
+            <h2
+              style={{
+                color: "white",
+                fontFamily: '"Roboto", Sans-serif',
+                fontSize: 28,
+                fontWeight: 600,
+              }}
+            >
+              CHOCOLATES
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      {/* <section>
         <div style={{ display: "flex" }}>
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={100}
-            style={{ width: "33%" }}
-            height={100}
-          />
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={100}
-            style={{ width: "33%" }}
-            height={100}
-          />
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={100}
-            style={{ width: "33%" }}
-            height={100}
-          />
         </div>
         <div style={{ display: "flex" }}>
           <div style={{ width: "33%", textAlign: "center" }}>
@@ -44,7 +119,7 @@ export default function Home() {
             TEXTO IMAGEN 3
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

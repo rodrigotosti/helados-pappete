@@ -8,8 +8,9 @@
 }
 
 .container {
+  width: 100%;
   padding: 20px;
-  max-width: 1080px;
+  justify-content: space-around;
   display: flex;
   overflow: hidden;
   transition: height 0.3s ease-out;
@@ -17,11 +18,14 @@
 
 .mobile {
   overflow: hidden;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
   position: fixed;
+  background: #ffffffb8;
   top: -85px;
   width: 100%;
   transition: top 0.5s ease-out;
-  justify-content: center;
 }
 
 .visible {
