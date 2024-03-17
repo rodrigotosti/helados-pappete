@@ -1,12 +1,14 @@
 import { FC } from "react";
 import flavoursModule from "./Flavours.module.css";
 
-type ButtonProps = {};
+type FlavoursProps = {
+  text: string;
+};
 
-const Flavours: FC<ButtonProps> = () => {
+const Flavours: FC<FlavoursProps> = ({ text }) => {
   return (
     <section className={flavoursModule.container}>
-      <h1 className={flavoursModule.text}>NUESTROS PRODUCTOS</h1>
+      <h1 className={flavoursModule.text}>{text}</h1>
       <div style={{ height: 6, width: 60, background: "#93805C" }}></div>
     </section>
   );
